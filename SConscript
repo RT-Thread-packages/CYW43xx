@@ -20,6 +20,6 @@ src += [
     cwd + '/cyw43-driver/src/cyw43_stats.c',
 ]
 
-group = DefineGroup('cyw43-driver', src, depend = [''], CPPPATH = path)
+group = DefineGroup('cyw43-driver', src, depend = ['PKG_USING_CYW43XX'], CPPPATH = path)
 
 Return('group')
