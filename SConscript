@@ -9,15 +9,15 @@ src = []
 
 # The set of source files associated with this SConscript file.
 path += [
-    cwd + '/cyw43-driver/src',
-    cwd + '/cyw43-driver/firmware',
+    cwd + '/src',
+    cwd + '/firmware',
 ]
 src += [
-    cwd + '/cyw43-driver/src/cyw43_ctrl.c',
-    cwd + '/cyw43-driver/src/cyw43_ll.c',
-    cwd + '/cyw43-driver/src/cyw43_lwip.c',
-    cwd + '/cyw43-driver/src/cyw43_sdio.c',
-    cwd + '/cyw43-driver/src/cyw43_stats.c',
+    cwd + '/src/cyw43_ctrl.c',
+    cwd + '/src/cyw43_ll.c',
+    cwd + '/src/cyw43_lwip.c',
+    cwd + '/src/cyw43_sdio.c',
+    cwd + '/src/cyw43_stats.c',
 ]
 
 group = DefineGroup('cyw43-driver', src, depend = ['PKG_USING_CYW43XX'], CPPPATH = path)
